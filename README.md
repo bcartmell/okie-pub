@@ -1,4 +1,4 @@
-# OKIE-PUB
+# Okie-Pub
 
 A simple publisher plugin used to make arbitrary objects publishers
 
@@ -11,5 +11,3 @@ To make an object a publisher:
 Then objects can subscribe to events like so:
 
     targetObject.subscribe( [event type name], [event callback], [optional context]);
-
-
