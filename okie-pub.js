@@ -51,30 +51,3 @@ var okiePub = (function() {
     }
   }
 }());
-
-
-/*
- * Testing instances
- */
-var paper = {
-  daily: function() {
-    debugger;
-    this.fire('daily', 'big news today!');
-  },
-  monthly: function() {
-    this.fire('monthly', 'interesting analysis', 'monthly');
-  }
-}
-
-var joe = {
-  readPaper: function(paper) {
-    console.log('Just read', paper);
-  },
-  readMonthly: function(monthly) {
-    console.log('About to fall asleep reading this ' +monthly);
-  }
-}
-
-okiePub.makePublisher(paper);
-paper.on('daily', joe.readPaper);
-paper.on('monthly', joe.readMonthly);
