@@ -1,7 +1,7 @@
 {
-  "name": "okie-events",
+  "name": "okie-pub",
   "version": "1.0.0",
-  "description": "I simple event manager.",
+  "description": "I simple event manager that makes any arbitrary object a publisher",
   "main": "okie-pub.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
